@@ -21,7 +21,7 @@ def main():
     st.title('INN Hotels')    
 
     lt = st.text_input('Enter lead time. ')
-    st.image('inn-hotels-official-color',use_column_width=True)
+    st.image('inn-hotels-official-color.jpg',use_column_width=True)
     mkt = (lambda x: 1 if x == 'Online' else 0)(st.selectbox('Enter the type of booking', ['Online', 'Offline']))
     spcl = st.selectbox('How many special requests have been made?',[0,1,2,3,4,5])
     price = st.text_input('Enter the price of the room.')
