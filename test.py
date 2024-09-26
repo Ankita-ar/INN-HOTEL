@@ -18,10 +18,10 @@ def prediction(input_data):
         return f' This booking is less likely to get canceled : Chances = {round(pred*100,2)}%'
     
 def main():
-    st.title('INN Hotels')    
-
-    lt = st.text_input('Enter lead time. ')
+    
+    st.title('INN Hotels')
     st.image('inn-hotels-official-color.jpg',use_column_width=True)
+    lt = st.text_input('Enter lead time. ')
     mkt = (lambda x: 1 if x == 'Online' else 0)(st.selectbox('Enter the type of booking', ['Online', 'Offline']))
     spcl = st.selectbox('How many special requests have been made?',[0,1,2,3,4,5])
     price = st.text_input('Enter the price of the room.')
