@@ -22,7 +22,6 @@ def main():
 
     lt = st.text_input('Enter lead time. ')
     mkt = (lambda x: 1 if x == 'Online' else 0)(st.selectbox('Enter the type of booking', ['Online', 'Offline']))
-    mkt = market[market_res]
     spcl = st.selectbox('How many special requests have been made?',[0,1,2,3,4,5])
     price = st.text_input('Enter the price of the room.')
     adults = st.selectbox('How many adults per room?', [1,2,3,4])
