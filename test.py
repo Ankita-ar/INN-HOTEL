@@ -31,7 +31,7 @@ def main():
     arr_d = st.slider('What will be the day of arrival', min_value=1, max_value=31, step=1)
     arr_m = st.slider('What will be the month of arrival', min_value=1, max_value=12, step=1)
     weekd_lambda = (lambda x : 0 if x=='Mon' else 1 if x=='Tues' else 2 if x=='Wed' else 3 if x=='Thrus' else 4 if x=='Fri' else 5 if x=='Sat' else 6)
-    arr_wd = weekd_lambda(st.selectbox('What is the weekday of arrival?'['Mon', 'Tues', 'Wed', 'Thrus', 'Fri', 'Sat', 'Sun']))
+    arr_wd = weekd_lambda(st.selectbox('What is the weekday of arrival?',['Mon', 'Tues', 'Wed', 'Thrus', 'Fri', 'Sat', 'Sun']))
 
     input_list = [[lt, mkt, spcl, price, adults, wknd, prk, wk, arr_d, arr_m, arr_wd]]
 
